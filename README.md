@@ -7,6 +7,7 @@
 - [安裝與使用](#安裝與使用)
 - [使用字體](#使用字體)
 - [注意事項](#注意事項)
+- [介紹影片](#介紹影片)
 
 ## 簡介
 這是一個用於分析 FunGame 遊戲玩家數據的專案。該專案包含數據分析腳本、玩家數據以及字體文件。本專案旨在提供對遊戲玩家行為和數據的深入分析，從而幫助改善遊戲體驗。
@@ -19,12 +20,12 @@ FunGame_playerdata/
 │   └── chinese.simhei.ttf
 ├── img/
 │   └── Counter-StrikeSource_Homepage_icon.webp
+│   └── Python期末考影片封面.png
 ├── all_player_data.csv
 ├── all_player_data.csv 應該是程式執行後的產物，如果爬蟲程式無法正常抓取，才會需要
 ├── chromedriver.exe
 ├── FunGame_playerdata.py
 ├── LICENSE.chromedriver
-├── Python期末考影片封面.png
 ├── README.md
 └── streamlit_app.py
 ```
@@ -54,7 +55,7 @@ FunGame_playerdata/
 ### 安裝步驟
 1. 克隆或下載此專案到本地：
     ```bash
-    git clone https://your-repo-url.git
+    git clone https://github.com/eqwgeryfgbdf/FunGame_playerdata.git
     cd your-repo-directory
     ```
 
@@ -63,7 +64,7 @@ FunGame_playerdata/
     pip install pandas matplotlib selenium streamlit
     ```
 
-3. 下載並將 `chromedriver.exe` 放置在專案目錄中。
+3. 下載並將 `chromedriver.exe` 放置在專案目錄中，些是直接使用項目中提供的。
 
 ### 使用方法
 
@@ -82,9 +83,11 @@ FunGame_playerdata/
 2. 打開瀏覽器並進入 `http://localhost:8501` 查看應用程式。
 
 ## 使用字體
-本專案中使用了 SimHei 字體來生成包含中文字符的圖表。字體文件已包含在項目中，並且來源於 sharefonts.net。
+本專案中使用了 SimHei 字體來生成包含中文字符的圖表。字體文件已包含在項目中。
 
 ## 注意事項
 - `all_player_data.csv` 文件中包含了大量的玩家數據，請確保在使用該數據時遵守相關的隱私政策和數據保護規定。
 - 在生成圖表時，如果遇到字體顯示問題，請確保已安裝 SimHei 字體並在腳本中正確引用。
 
+## 介紹影片
+了解更多關於此專案的信息，請觀看我們的介紹影片：[FunGame 玩家資料分析介紹](https://youtu.be/Xv2NtCjW5CQ)
