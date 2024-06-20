@@ -22,7 +22,6 @@ FunGame_playerdata/
 │   └── Counter-StrikeSource_Homepage_icon.webp
 │   └── Python期末考影片封面.png
 ├── all_player_data.csv
-├── all_player_data.csv 應該是程式執行後的產物，如果爬蟲程式無法正常抓取，才會需要
 ├── chromedriver.exe
 ├── FunGame_playerdata.py
 ├── LICENSE.chromedriver
@@ -37,7 +36,7 @@ FunGame_playerdata/
   - `chinese.simhei.ttf`：中文字體檔案。
 - `img/`：包含專案中使用的圖像檔案。
   - `Counter-StrikeSource_Homepage_icon.webp`：WebP 格式的圖像檔案。
-- `all_player_data.csv`：玩家數據的 CSV 檔案，包含玩家的詳細數據。
+- `all_player_data.csv`：玩家數據的 CSV 檔案，包含玩家的詳細數據。(如果爬蟲程式無法正常抓取，才會需要)
 - `chromedriver.exe`：用於網頁抓取的 ChromeDriver 可執行檔案。
 - `LICENSE.chromedriver`：ChromeDriver 的授權檔案。
 - `Python期末考影片封面.png`：期末考影片的封面圖像。
