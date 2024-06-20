@@ -10,7 +10,7 @@ import base64
 df = pd.read_csv('all_player_data.csv', encoding='utf-8')
 
 # 設置中文字體
-font_path = 'font/chinese.simHei.ttf'  # 替換成實際字體路徑，注意使用正斜杠或雙反斜杠
+font_path = 'font/chinese.simhei.ttf'  # 替換成實際字體路徑，注意使用正斜杠或雙反斜杠
 font_prop = fm.FontProperties(fname=font_path)
 plt.rcParams['font.sans-serif'] = [font_prop.get_name()]
 plt.rcParams['axes.unicode_minus'] = False  # 解決座標軸負號顯示問題
