@@ -39,7 +39,7 @@ circle_image_style = f"""
 sidebar_style = """
 <style>
     .sidebar .sidebar-content {
-        font-size: 20px;
+        font-size: 50px;
         font-family: 'Courier New', Courier, monospace;
     }
     .sidebar .sidebar-content a {
@@ -48,6 +48,15 @@ sidebar_style = """
     }
     .sidebar .sidebar-content a:hover {
         text-decoration: underline;
+    }
+    .sidebar .markdown-text-container {
+    font-size: 30px; /* 調整字體大小 */
+    font-weight: bold; /* 設置字體加粗 */
+    }
+    .sidebar .title {
+        font-size: 40px;
+        font-weight: bold;
+        color: #4CAF50;
     }
 </style>
 """
@@ -59,7 +68,7 @@ st.markdown(f'<img src="data:image/webp;base64,{img_str}" class="circle-image">'
 # Streamlit 應用程式標題
 st.title('玩家數據分析')
 
-# 在側邊欄新增網站連結，並應用自訂字體樣式
+# 設置側邊欄內容
 st.sidebar.markdown(sidebar_style, unsafe_allow_html=True)
 st.sidebar.title("額外連結")
 st.sidebar.markdown("[立即遊玩(ZE模式)](steam://connect/122.116.127.12:27015)")
@@ -69,6 +78,7 @@ st.sidebar.markdown("[黑名單](http://funcommunity.tw/bans/)")
 st.sidebar.markdown("[遊戲資源](http://funcommunity.tw/fastdl/)")
 st.sidebar.markdown("[社群主頁](http://funcommunity.tw/)")
 st.sidebar.markdown("[加入我們](https://discord.gg/cgfDDjeyWK)")
+
 
 # 選擇要顯示的數值標題
 columns = df.select_dtypes(include=['float64', 'int64']).columns.tolist()
